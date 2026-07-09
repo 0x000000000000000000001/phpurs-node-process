@@ -1,0 +1,7 @@
+package:
+  name: node-process
+  dependencies:
+    - effect
+    - foreign-object
+    - maybe
+    - prelude
