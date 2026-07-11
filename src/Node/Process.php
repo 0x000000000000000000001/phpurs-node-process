@@ -24,9 +24,7 @@ $exports['stdout'] = defined('STDOUT') ? STDOUT : fopen('php://stdout', 'w');
 $exports['stderr'] = defined('STDERR') ? STDERR : fopen('php://stderr', 'w');
 
 $exports['exitImpl'] = function($code) {
-    return function() use ($code) {
-        exit($code);
-    };
+    exit($code);
 };
 
 return $exports;
