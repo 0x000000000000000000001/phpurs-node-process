@@ -13,11 +13,8 @@ $exports['setEnv'] = function($key) {
     };
 };
 
-$exports['lookupEnv'] = function($key) {
-    return function() use ($key) {
-        $val = getenv($key);
-        return $val !== false ? $val : null;
-    };
+$exports['unsafeGetEnv'] = function() {
+    return (object)(getenv() ?: []);
 };
 
 $exports['stdout'] = defined('STDOUT') ? STDOUT : fopen('php://stdout', 'w');
