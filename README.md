@@ -1,4 +1,4 @@
-# purescript-node-process
+# phpurs-node-process
 
 [![Latest release](http://img.shields.io/github/release/purescript-node/purescript-node-process.svg)](https://github.com/purescript-node/purescript-node-process/releases)
 [![Build status](https://github.com/purescript-node/purescript-node-process/workflows/CI/badge.svg?branch=master)](https://github.com/purescript-node/purescript-node-process/actions?query=workflow%3ACI+branch%3Amaster)
